@@ -1,6 +1,6 @@
 {
     "view_title_prefix": {
-        "connected": "👻✅",
-        "disconnected": "👻➖"
+        "connected": "☗ ✓",
+        "disconnected": "☗ ☾"
     }
 }
