@@ -18,6 +18,8 @@ class WindowHelper(sublime.Window):
         view = self._find_disconnected_view(title)
         view.set_name('{} {}'.format(self._view_connected_prefix, title))
         view.set_status('title', title)
+        view.options().set('wordWrap', True)
+        view.options().set('wrapWidth', 80)
         view.run_command('replace_content', {'text': text})
         view.set_scratch(True)
 
